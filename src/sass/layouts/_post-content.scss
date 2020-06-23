@@ -10,8 +10,12 @@
     }
   }
 
-  h1,
-  h2,
+  h1 {
+    border-bottom: none;
+}
+  h2 {
+    border-bottom: 1px solid #C8CACA;
+}
   h3,
   h4,
   h5,
@@ -100,8 +104,13 @@
 
   a {
     color: var(--primary-foreground-color);
-    text-decoration: underline;
+    background-color: #d7efef;
   }
+    
+a:hover {
+  color: var(--primary-foreground-color);
+  background-color: #c0eceb;
+}
 
   ul, ol {
     letter-spacing: 0.2px;
@@ -455,6 +464,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
+    background-color: #fff;  
   }
 
   .kg-bookmark-title {
