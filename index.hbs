@@ -23,7 +23,26 @@ into the {body} of the default.hbs template --}}
     {{#if @labs.members}}
       <a href="{{@site.url}}/newsletter" class="m-button filled">{{t "Subscribe"}}</a>
     {{/if}}
+      
+        <div class="m-hero-social">
+    
+     <li>
+      <a href="https://twitter.com/florian_demaku" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter"></span>
+        </a>
+       </li>
+            
+    <li>
+      <a href="https://www.linkedin.com/in/florian-demaku" target="_blank" rel="noopener" aria-label="Linked In">
+          <span class="icon-linkedin"></span>
+           </a>
+    </li>
+      
+    </div> 
+      
   </div>
+
+   
   </section>
   
   <main>
@@ -47,7 +66,9 @@ into the {body} of the default.hbs template --}}
                             {{#if primary_author.profile_image}}
                               <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
                             {{else}}
+                              
                               <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
+                             
                             {{/if}}
                           </a>
                           {{#if primary_tag}}

@@ -583,25 +583,25 @@ textarea,
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
-    --background-color: #fff;
-    --primary-foreground-color: #4a4a4a;
-    --secondary-foreground-color: #000;
-    --primary-subtle-color: #04aeee;
-    --secondary-subtle-color: #f4f8fd;
-    --titles-color: #333;
-    --link-color: #293951;
-    --primary-border-color: #9b9b9b;
-    --secondary-border-color: aliceblue;
-    --article-shadow-normal: 0 10px 10px rgba(0,0,0,0.08);
-    --article-shadow-hover: 0 4px 60px 0 rgba(0,0,0,0.2);
-    --transparent-background-color: rgba(255,255,255,0.99);
-    --footer-background-color: #293951;
-    --submenu-shadow-color-opacity: 0.25;
-    --button-shadow-color-normal: rgba(108, 108, 108, 0.2);
-    --button-shadow-color-hover: rgba(108, 108, 108, 0.3);
-    --toggle-darkmode-button-color: #fff;
-    --table-background-color-odd: #fafafa;
-    --table-head-border-bottom: #e2e2e2;
+    --background-color: #111;
+    --primary-foreground-color: #ccc;
+    --secondary-foreground-color: #fff;
+    --primary-subtle-color: #2c2fe6;
+    --secondary-subtle-color: #141920;
+    --titles-color: #b4b4b4;
+    --link-color: #2c2fe6;
+    --primary-border-color: #1d1d1d;
+    --secondary-border-color: #0f0f0f;
+    --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
+    --article-shadow-hover: 0 4px 5px 10px rgba(0,0,0,0.1);
+    --transparent-background-color: rgba(0,0,0,0.99);
+    --footer-background-color: #080808;
+    --submenu-shadow-color-opacity: 0.55;
+    --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
+    --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
+    --toggle-darkmode-button-color: #efd114;
+    --table-background-color-odd: #050505;
+    --table-head-border-bottom: #1d1d1d;
   }
 }
 /** Helpers */
@@ -1084,11 +1084,11 @@ img.lozad.loaded {
   }
 }
 .l-post-content h1 {
-  border-bottom: none;
-}
+    border-bottom: none;
+},
 .l-post-content h2 {
-  border-bottom: 1px solid #C8CACA;
-}
+    border-bottom: 1px solid #C8CACA;
+},
 .l-post-content h3,
 .l-post-content h4,
 .l-post-content h5,
@@ -1100,7 +1100,13 @@ img.lozad.loaded {
   margin: 0 0 30px;
 }
 @media only screen and (min-width: 48rem) {
-  .l-post-content h3,
+  .l-post-content h1 {
+    border-bottom: none;
+}
+.l-post-content h2 {
+    border-bottom: 1px solid #C8CACA;
+}
+.l-post-content h3,
 .l-post-content h4,
 .l-post-content h5,
 .l-post-content h6 {
@@ -1184,6 +1190,7 @@ img.lozad.loaded {
   color: var(--primary-foreground-color);
   background-color: #c0eceb;
 }
+
 .l-post-content ul, .l-post-content ol {
   letter-spacing: 0.2px;
   line-height: 1.5;
@@ -1504,7 +1511,6 @@ img.lozad.loaded {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 20px;
-  background-color: #fff;
 }
 .l-post-content .kg-bookmark-title {
   font-size: 1.125rem;

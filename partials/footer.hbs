@@ -3,27 +3,46 @@ This footer template is shared across all the pages.
 --}}
 
 <footer class="m-footer">
+   
   <div class="m-footer__content">
     <p class="m-footer-copyright">
+        <span> Made with &hearts; by Florian Demaku</span>
+    <!--    
+          <span>  Florian Demaku. &copy; {{date format="YYYY"}}.</span>
+	
       <span>{{@site.title}} &copy; {{date format="YYYY"}}</span>
       <span>&nbsp; &bull; &nbsp;</span>
-      <span>{{t "Published with"}} <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+	  
+      <span>{{t "Published with"}}
+    --> 
     </p>
 
     <nav class="m-footer-social">
-      {{#if @site.facebook}}
-        <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
+      <!--
+        {{#if @site.facebook}}
+        <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Linked In">
           <span class="icon-facebook"></span>
         </a>
       {{/if}}
+-->
       {{#if @site.twitter}}
         <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
           <span class="icon-twitter"></span>
         </a>
       {{/if}}
+        <a href="https://www.linkedin.com/in/florian-demaku" target="_blank" rel="noopener" aria-label="Linked In">
+          <span class="icon-linkedin"></span>
+        </a>
     </nav>
+	<!--
     <p class="m-footer-copyright jslicense">
       <a href="{{asset "html/javascript.html"}}" rel="jslicense">{{t "JavaScript license information"}}</a>
     </p>
+--> 
+<a href="/impressum-legal-notice" target="_blank" rel="noopener">Impressum</a> |
+<a href="/datenschutzbestimmungen-privacy-policy/" target="_blank" rel="noopener">Datenschutz</a>
+      
+      </span>
+    
   </div>
 </footer>
